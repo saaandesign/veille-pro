@@ -1,90 +1,368 @@
 {
   "miseAJour": "2026-11-11",
-  "exemple": true,
+  "exemple": false,
   "offres": [
     {
-      "id": "exemple-1",
-      "titre": "Social Media Manager",
-      "entreprise": "Agence créative (exemple)",
+      "id": "jobijoba-912b7b6d3f52dceb55f20956fe550d35",
+      "titre": "Digital & Content Manager",
+      "entreprise": "Fédération française de cyclisme",
       "contrat": "CDI",
-      "lieu": "Paris 10e",
+      "lieu": "Montigny-le-Bretonneux (78)",
       "teletravail": false,
-      "publiee": "2026-11-09",
-      "match": 92,
-      "lien": "",
-      "pourquoi": "Ton passage chez Ogilvy en social creative et ton activité en indépendant collent aux missions. L'anglais est le seul point à appuyer.",
-      "missions": ["Piloter les comptes Instagram, TikTok et LinkedIn de 4 marques", "Concevoir les calendriers éditoriaux", "Suivre les KPI et faire les bilans mensuels"],
-      "attendus": ["Suite Adobe", "CapCut", "Formats courts", "Anglais courant", "3 ans d'expérience"],
-      "angle": "Mets en avant un compte que tu as fait grandir, chiffres à l'appui."
+      "publiee": "2026-10-15",
+      "match": 85,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/912b7b6d3f52dceb55f20956fe550d35",
+      "pourquoi": "Le sport et le cyclisme collent à ton passé broadcast (Tour de France). L'annonce détaillée n'a pas pu être lue en entier : vérifie les attendus.",
+      "missions": [
+        "Animer les réseaux de la fédération (Instagram, Facebook, TikTok, LinkedIn, X)",
+        "Créer les contenus",
+        "Faire la veille des réseaux"
+      ],
+      "attendus": [
+        "Formats courts (Reels, TikTok)",
+        "Community management",
+        "Création de contenus"
+      ],
+      "angle": "Ouvre ta candidature sur le Tour de France : tu connais le vélo de l'intérieur, côté caméra."
     },
     {
-      "id": "exemple-2",
-      "titre": "Content Creator vidéo sport",
-      "entreprise": "Club sportif (exemple)",
-      "contrat": "CDD",
-      "lieu": "Boulogne-Billancourt",
-      "teletravail": false,
-      "publiee": "2026-11-06",
-      "match": 88,
-      "lien": "",
-      "pourquoi": "Ton expérience broadcast (Roland-Garros, PSG, Tour de France) est rare chez les candidats social media.",
-      "missions": ["Tourner et monter les contenus jour de match", "Créer des formats verticaux pour les réseaux"],
-      "attendus": ["Tournage terrain", "Premiere Pro", "Disponible le week-end"],
-      "angle": "Raconte que tu connais les coulisses d'un direct sportif, côté caméra."
-    },
-    {
-      "id": "exemple-3",
-      "titre": "Directeur artistique junior",
-      "entreprise": "Studio de design (exemple)",
+      "id": "hellowork-84505114",
+      "titre": "Consultant social media & stratégie éditoriale (médias audiovisuels, YouTube)",
+      "entreprise": "Média d'information (via Mon Consultant Indépendant)",
       "contrat": "Freelance",
-      "lieu": "100 % télétravail",
-      "teletravail": true,
-      "publiee": "2026-11-10",
-      "match": 81,
-      "lien": "",
-      "pourquoi": "Ton portfolio montre logotypes et identités. Figma n'apparaît pas encore dans tes outils.",
-      "missions": ["Créer des identités visuelles", "Décliner les chartes sur le digital"],
-      "attendus": ["Illustrator", "Figma", "Portfolio identité"],
-      "angle": "Envoie 3 projets d'identité, pas plus, avec une ligne d'explication chacun."
-    },
-    {
-      "id": "exemple-4",
-      "titre": "Chef de projet social media",
-      "entreprise": "Annonceur événementiel (exemple)",
-      "contrat": "CDI",
-      "lieu": "Rambouillet",
-      "teletravail": false,
-      "publiee": "2026-10-30",
-      "match": 76,
-      "lien": "",
-      "pourquoi": "Bon match sur l'événementiel, moins sur la gestion de budget.",
-      "missions": ["Coordonner les prestataires créa", "Gérer la couverture live des événements"],
-      "attendus": ["Gestion de projet", "Budget", "Permis B"],
-      "angle": "Parle de ta capacité à tenir un planning sur un tournage."
-    },
-    {
-      "id": "exemple-5",
-      "titre": "Community manager",
-      "entreprise": "Marque lifestyle (exemple)",
-      "contrat": "CDI",
-      "lieu": "Paris 2e",
+      "lieu": "Paris",
       "teletravail": false,
       "publiee": "2026-10-16",
+      "match": 80,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84505114.html",
+      "pourquoi": "Un média audiovisuel qui veut découper ses vidéos en formats réseaux : ton double profil broadcast + social media est pile dedans. Ils demandent 5 ans d'expérience.",
+      "missions": [
+        "Définir la stratégie digitale et les lignes éditoriales",
+        "Créer et optimiser les comptes Instagram, YouTube, LinkedIn, Facebook",
+        "Découper les vidéos en teasers et extraits",
+        "Modérer la communauté"
+      ],
+      "attendus": [
+        "Premiere Pro ou Final Cut",
+        "Canva",
+        "Montage vidéo",
+        "Présence sur place (80 %)",
+        "Week-ends ponctuels",
+        "5 ans d'expérience"
+      ],
+      "angle": "Additionne tes années broadcast et social media pour montrer que tu dépasses les 5 ans, et joins un exemple de vidéo longue découpée en formats courts."
+    },
+    {
+      "id": "hellowork-84558283",
+      "titre": "Social Media Manager",
+      "entreprise": "Les Bienheureux (spiritueux)",
+      "contrat": "CDI",
+      "lieu": "Paris 1er",
+      "teletravail": true,
+      "publiee": "2026-10-19",
+      "match": 78,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84558283.html",
+      "pourquoi": "Poste complet entre calendrier, production et montage court, proche de ce que tu fais en indépendant. 3 ans demandés, tu les as.",
+      "missions": [
+        "Construire et tenir le calendrier éditorial",
+        "Produire et publier les contenus",
+        "Piloter les agences partenaires",
+        "Faire le bilan mensuel"
+      ],
+      "attendus": [
+        "Instagram, TikTok, LinkedIn",
+        "Meta Business Suite",
+        "Montage vidéo",
+        "Formats courts (Reels, TikTok)",
+        "Retouche photo",
+        "Suivi des KPI",
+        "3 ans d'expérience"
+      ],
+      "angle": "Montre un calendrier éditorial que tu as tenu pour un client SAAAN CRTN et le bilan chiffré qui va avec."
+    },
+    {
+      "id": "hellowork-84736484",
+      "titre": "Social Media & Content Coordinator",
+      "entreprise": "RESEE",
+      "contrat": "CDI",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-10-23",
+      "match": 76,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84736484.html",
+      "pourquoi": "Tout y est : Reels, visuels, shootings. Le poste est un peu en dessous de ton niveau (1 an demandé, environ 2 100 à 2 660 € brut par mois).",
+      "missions": [
+        "Gérer le calendrier éditorial et les réseaux au quotidien",
+        "Tourner et monter des Reels",
+        "Créer les visuels réseaux",
+        "Coordonner les shootings photo"
+      ],
+      "attendus": [
+        "Formats courts (Reels, TikTok)",
+        "Montage vidéo",
+        "Création graphique",
+        "Prise de vue",
+        "Anglais"
+      ],
+      "angle": "Mets en avant que tu sais tout faire seul, du tournage au visuel, et négocie le salaire vers le haut."
+    },
+    {
+      "id": "hellowork-80079226",
+      "titre": "Monteur vidéo (formats courts)",
+      "entreprise": "Sézane",
+      "contrat": "Freelance",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-10-13",
+      "match": 74,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/80079226.html",
+      "pourquoi": "Mission de montage pur pour une marque forte : ton œil vidéo est un atout. Ils travaillent sur DaVinci Resolve, que tu dois maîtriser.",
+      "missions": [
+        "Monter des vidéos courtes et longues (Reels, TikTok, Shorts)",
+        "Étalonner",
+        "Ajouter accroches, transitions, sous-titres et son",
+        "Décliner les formats"
+      ],
+      "attendus": [
+        "DaVinci Resolve",
+        "After Effects",
+        "Figma",
+        "Formats courts (Reels, TikTok)",
+        "Montage vidéo"
+      ],
+      "angle": "Envoie 3 formats courts rythmés, avec une accroche forte dans les 2 premières secondes."
+    },
+    {
+      "id": "hellowork-84720256",
+      "titre": "Social Media Manager",
+      "entreprise": "Distribution technique (via Michael Page)",
+      "contrat": "CDI",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-10-23",
+      "match": 72,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84720256.html",
+      "pourquoi": "Poste complet (stratégie, contenus visuels et vidéo, reporting) mais secteur B2B technique, moins créatif.",
+      "missions": [
+        "Définir et piloter la stratégie social media",
+        "Tenir le calendrier et publier",
+        "Créer des contenus visuels, rédactionnels et vidéo",
+        "Animer la communauté et faire le reporting"
+      ],
+      "attendus": [
+        "Outils de planification social media",
+        "Montage vidéo",
+        "Création graphique",
+        "Suivi des KPI"
+      ],
+      "angle": "Présente-toi comme celui qui rend un secteur technique visuel et vivant, exemples à l'appui."
+    },
+    {
+      "id": "hellowork-84608032",
+      "titre": "Social Strategist",
+      "entreprise": "BBDO Paris",
+      "contrat": "CDI",
+      "lieu": "Paris 17e",
+      "teletravail": true,
+      "publiee": "2026-10-20",
       "match": 70,
-      "lien": "",
-      "pourquoi": "Poste un peu en dessous de ton niveau, et l'annonce date de près d'un mois.",
-      "missions": ["Animer la communauté", "Modérer et répondre aux messages"],
-      "attendus": ["Ton de marque", "Canva", "1 à 2 ans d'expérience"],
-      "angle": "À tenter seulement si tu as le temps."
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84608032.html",
+      "pourquoi": "Ton passage chez Ogilvy parle à une agence de ce niveau. Mais le poste est surtout stratégie et reco, moins création, et l'anglais courant est exigé.",
+      "missions": [
+        "Écrire les recommandations stratégiques",
+        "Rédiger les briefs créatifs des calendriers",
+        "Analyser les KPI et faire les bilans",
+        "Faire la veille concurrentielle"
+      ],
+      "attendus": [
+        "Suivi des KPI",
+        "Anglais",
+        "Stratégie social media",
+        "2 ans d'expérience"
+      ],
+      "angle": "Raconte un brief Ogilvy où tu as transformé une idée en dispositif social, et montre que tu sais lire les chiffres."
+    },
+    {
+      "id": "hellowork-84607775",
+      "titre": "Community Manager Épargne",
+      "entreprise": "Épargne et assurance (via Finaia)",
+      "contrat": "CDI",
+      "lieu": "Paris 12e",
+      "teletravail": false,
+      "publiee": "2026-10-20",
+      "match": 68,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84607775.html",
+      "pourquoi": "Beaucoup de vidéo native (tournage et montage), ton point fort. Le sujet finance et le Bac+5 demandé t'éloignent un peu. Salaire 40 à 45 k€.",
+      "missions": [
+        "Gérer LinkedIn, Instagram, TikTok et YouTube",
+        "Créer des vidéos natives",
+        "Faire de la pédagogie financière",
+        "Contribuer à l'acquisition digitale"
+      ],
+      "attendus": [
+        "Tournage et montage vidéo",
+        "Montage vidéo",
+        "Formats courts (Reels, TikTok)",
+        "3 ans d'expérience",
+        "Bac+5"
+      ],
+      "angle": "Insiste sur ta capacité à rendre un sujet austère simple et regardable en vidéo."
+    },
+    {
+      "id": "hellowork-85315030",
+      "titre": "Chef de projet communication & marketing senior",
+      "entreprise": "leZèbre (assurance)",
+      "contrat": "CDI",
+      "lieu": "Antony (92)",
+      "teletravail": true,
+      "publiee": "2026-11-09",
+      "match": 65,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/85315030.html",
+      "pourquoi": "Annonce toute fraîche et bien payée (42 à 48 k€), avec réseaux et contenus. Mais elle mêle emailing et relations presse, et vise 4 à 8 ans d'expérience.",
+      "missions": [
+        "Gérer les réseaux sociaux, emailings et newsletters",
+        "Coordonner les contenus et le calendrier éditorial",
+        "Gérer les relations presse",
+        "Piloter les campagnes et deux alternants"
+      ],
+      "attendus": [
+        "Brevo",
+        "Suivi des KPI",
+        "Création graphique",
+        "IA générative",
+        "Gestion de projet"
+      ],
+      "angle": "Mets en avant ta gestion de projet (Extreme Agency, SAAAN CRTN) et ton côté couteau suisse créatif."
+    },
+    {
+      "id": "hellowork-84626308",
+      "titre": "Graphiste - Motion designer",
+      "entreprise": "Junk (restauration, via France Travail)",
+      "contrat": "CDI",
+      "lieu": "Paris 9e",
+      "teletravail": false,
+      "publiee": "2026-10-20",
+      "match": 62,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/84626308.html",
+      "pourquoi": "Identité visuelle, contenus animés et montage pour Instagram et TikTok : bon mélange design et vidéo. La 3D (Blender, Cinema 4D) et 5 ans demandés sont des freins. Salaire 30 k€.",
+      "missions": [
+        "Faire évoluer l'identité visuelle",
+        "Créer les supports print et digitaux",
+        "Produire des contenus animés pour Instagram et TikTok",
+        "Animer en 2D/3D et monter"
+      ],
+      "attendus": [
+        "Suite Adobe",
+        "After Effects",
+        "Premiere Pro",
+        "Blender ou Cinema 4D",
+        "Anglais"
+      ],
+      "angle": "Montre une identité que tu as créée puis déclinée en formats animés."
+    },
+    {
+      "id": "hellowork-85107947",
+      "titre": "Community Officer (plateformes digitales)",
+      "entreprise": "Daikin",
+      "contrat": "CDI",
+      "lieu": "Nanterre (92)",
+      "teletravail": true,
+      "publiee": "2026-11-03",
+      "match": 60,
+      "lien": "https://www.hellowork.com/fr-fr/emplois/85107947.html",
+      "pourquoi": "Annonce récente avec réseaux et vidéos courtes, mais une bonne part du poste est le site web et l'outil Adobe Experience Manager, qu'ils exigent.",
+      "missions": [
+        "Gérer le site daikin.fr",
+        "Gérer Facebook, Instagram et YouTube",
+        "Créer des vidéos courtes",
+        "Faire du SEO et des tests"
+      ],
+      "attendus": [
+        "Adobe Experience Manager",
+        "Montage vidéo",
+        "Formats courts (Reels, TikTok)",
+        "Suivi des KPI",
+        "Anglais"
+      ],
+      "angle": "À tenter si tu es prêt à apprendre AEM : dis-le franchement et mise sur la vidéo."
+    },
+    {
+      "id": "jobijoba-81c073566b70179fefc8598ab1363c16",
+      "titre": "Spécialiste CRM et réseaux sociaux BMW Motorrad",
+      "entreprise": "BMW",
+      "contrat": "CDI",
+      "lieu": "Yvelines",
+      "teletravail": false,
+      "publiee": "2026-11-09",
+      "match": 58,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/81c073566b70179fefc8598ab1363c16",
+      "pourquoi": "Belle marque moto avec un côté événementiel, et annonce récente. Mais le poste est surtout CRM et fidélisation, loin de la création.",
+      "missions": [
+        "Piloter le plan CRM de la marque",
+        "Mener des actions de fidélisation et conquête",
+        "Animer les réseaux de BMW Motorrad France",
+        "Coordonner les agences média, créa et community"
+      ],
+      "attendus": [
+        "Suivi des KPI",
+        "Qlik",
+        "Emailing / CRM",
+        "Gestion d'agences"
+      ],
+      "angle": "Mets en avant ta coordination de prestataires et propose une idée de contenu moto/événement."
+    },
+    {
+      "id": "jobijoba-23118404e4edf0dfbe0c55a55544c3bb",
+      "titre": "Chargé de marketing digital",
+      "entreprise": "Groupe grande consommation (via Delassalle & Partners)",
+      "contrat": "CDD",
+      "lieu": "Les Ulis (91)",
+      "teletravail": true,
+      "publiee": "2026-10-27",
+      "match": 55,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/23118404e4edf0dfbe0c55a55544c3bb",
+      "pourquoi": "Proche de chez toi et bien payé (35 à 40 k€), mais très orienté SEO, publicité payante et CRM plutôt que création.",
+      "missions": [
+        "Gérer le site web et le SEO",
+        "Animer les réseaux (calendrier, publication)",
+        "Gérer le CRM et l'automatisation",
+        "Piloter campagnes payantes et influence"
+      ],
+      "attendus": [
+        "SEO",
+        "Google Ads, Meta Ads",
+        "Google Analytics",
+        "Canva ou Suite Adobe",
+        "Emailing / CRM"
+      ],
+      "angle": "Utile comme mission courte pour sortir du travail alimentaire : appuie sur ta partie réseaux et création."
     }
   ],
   "tendances": [
-    { "nom": "Formats courts (Reels, TikTok)", "pct": 72 },
-    { "nom": "Suite Adobe", "pct": 68 },
-    { "nom": "IA générative", "pct": 54 },
-    { "nom": "Suivi des KPI", "pct": 49 },
-    { "nom": "Anglais", "pct": 41 },
-    { "nom": "Figma", "pct": 33 }
+    {
+      "nom": "Montage vidéo",
+      "pct": 62
+    },
+    {
+      "nom": "Suivi des KPI",
+      "pct": 54
+    },
+    {
+      "nom": "Formats courts (Reels, TikTok)",
+      "pct": 46
+    },
+    {
+      "nom": "Création graphique",
+      "pct": 31
+    },
+    {
+      "nom": "Anglais",
+      "pct": 31
+    },
+    {
+      "nom": "Suite Adobe",
+      "pct": 31
+    }
   ],
-  "conseil": "Les formats courts reviennent dans 7 offres sur 10. Mets ta série « Épisode Créa » en tête de ton portfolio."
+  "conseil": "Le montage vidéo revient dans 6 offres sur 10 : mets 3 vidéos courtes montées par toi en tête de ton portfolio, et vise d'abord la Fédération française de cyclisme."
 }
