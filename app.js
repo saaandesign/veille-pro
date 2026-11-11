@@ -1,9 +1,9 @@
 // Veille Pro : affiche la veille du jour (data/offres.json) et suit les candidatures.
 // Les candidatures restent sur le téléphone (stockage local du navigateur), rien n'est envoyé en ligne.
 
-const STAGES = ["Envoyée", "Relancée", "Entretien", "Signé", "Refus"];
+const STAGES = ["Prête", "Envoyée", "Relancée", "Entretien", "Signé", "Refus"];
 // Part de l'œil du Daruma peinte selon l'étape la plus avancée.
-const FILL = { "Envoyée": 25, "Relancée": 40, "Entretien": 70, "Signé": 100, "Refus": 0 };
+const FILL = { "Prête": 10, "Envoyée": 25, "Relancée": 40, "Entretien": 70, "Signé": 100, "Refus": 0 };
 const STORE_KEY = "veille-pro:candidatures";
 
 const $ = (s) => document.querySelector(s);
@@ -74,7 +74,7 @@ function renderList() {
     b.className = "offer" + (d > 21 ? " old" : "");
     b.innerHTML = `<span class="o-txt"><p class="o-title">${esc(o.titre)}</p>
       <span class="o-sub">${esc(o.entreprise)} · ${esc(o.contrat)} · ${esc(o.lieu)}</span>
-      <span class="meta">${d <= 2 ? '<span class="fresh">Tout frais</span>' : ""}<span class="age ${ageCls(d)}">${ageTxt(d)}</span>${cand[o.id] ? `<span class="applied">${esc(cand[o.id].etape)}</span>` : ""}</span></span>
+      <span class="meta">${d <= 2 ? '<span class="fresh">Tout frais</span>' : ""}<span class="age ${ageCls(d)}">${ageTxt(d)}</span>${cand[o.id] ? `<span class="applied${cand[o.id].etape === "Prête" ? " ready" : ""}">${esc(cand[o.id].etape)}</span>` : ""}</span></span>
       <span class="pc">${Number(o.match) || 0}<small>%</small></span>`;
     b.onclick = () => openSheet(o);
     L.appendChild(b);
@@ -131,7 +131,10 @@ function openSheet(o) {
   const c = cand[o.id];
   const i = c ? STAGES.indexOf(c.etape) : -1;
   const canAdvance = !c || (c.etape !== "Signé" && c.etape !== "Refus");
-  const nextLabel = !c ? "J'ai postulé" : STAGES[i + 1];
+  const nextLabel = !c ? "J'ai postulé" : c.etape === "Prête" ? "C'est envoyé" : STAGES[i + 1];
+  // Lien pour postuler : celui préparé par le fil des candidatures, sinon l'annonce.
+  const target = (c && c.postuler) || o.postuler || "";
+  const applyHref = target ? (target.includes("@") && !target.includes("://") ? "mailto:" + target : target) : o.lien;
   const d = o.publiee ? ageDays(o.publiee) : null;
   const list = (arr) => (arr && arr.length ? arr : null);
 
@@ -142,6 +145,7 @@ function openSheet(o) {
     ${list(o.missions) ? `<div class="sec"><h4>Missions</h4><ul>${o.missions.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
     ${list(o.attendus) ? `<div class="sec"><h4>Ce qu'ils attendent</h4><div class="tags">${o.attendus.map((x) => `<span class="tag">${esc(x)}</span>`).join("")}</div></div>` : ""}
     ${o.angle ? `<div class="sec"><h4>Ton angle</h4><p>${esc(o.angle)}</p></div>` : ""}
+    ${c && c.etape === "Prête" ? `<div class="ready-box"><b>Ta candidature est prête.</b> Envoie-la, puis touche « C'est envoyé ».${applyHref ? `<a class="btn apply" href="${esc(applyHref)}" target="_blank" rel="noopener">Postuler</a>` : ""}</div>` : ""}
     ${o.lien ? `<a class="link" href="${esc(o.lien)}" target="_blank" rel="noopener">Voir l'annonce</a>` : ""}
     <div class="actions">
       <button class="btn" id="close">Fermer</button>
@@ -153,7 +157,7 @@ function openSheet(o) {
   $("#sheetBg").hidden = false;
   $("#close").onclick = closeSheet;
   const set = (etape) => {
-    cand[o.id] = { etape, titre: o.titre, entreprise: o.entreprise, contrat: o.contrat, lieu: o.lieu, date: new Date().toISOString().slice(0, 10) };
+    cand[o.id] = { ...(c || {}), etape, titre: o.titre, entreprise: o.entreprise, contrat: o.contrat, lieu: o.lieu, date: new Date().toISOString().slice(0, 10) };
     save(); closeSheet(); renderAll();
   };
   if ($("#advance")) $("#advance").onclick = () => set(!c ? "Envoyée" : STAGES[i + 1]);
@@ -184,9 +188,29 @@ document.querySelectorAll(".tab").forEach((t) => {
   };
 });
 
+// Candidatures préparées par le fil « Rédiger mes lettres de motivation » (data/candidatures.json).
+// On les ajoute au téléphone, sans jamais faire reculer une étape déjà franchie ici.
+async function mergeRemote() {
+  try {
+    const res = await fetch("data/candidatures.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const remote = (await res.json()).candidatures || {};
+    let changed = false;
+    for (const [id, r] of Object.entries(remote)) {
+      if (!r || !STAGES.includes(r.etape)) continue;
+      const l = cand[id];
+      const ahead = !l || (l.etape !== "Refus" && STAGES.indexOf(r.etape) > STAGES.indexOf(l.etape));
+      if (ahead) { cand[id] = { ...(l || {}), ...r }; changed = true; }
+      else if (l && r.postuler && !l.postuler) { l.postuler = r.postuler; changed = true; }
+    }
+    if (changed) save();
+  } catch (e) { /* pas de fichier ou hors ligne : on garde le stockage local */ }
+}
+
 async function start() {
   header();
   paintEye();
+  await mergeRemote();
   try {
     const res = await fetch("data/offres.json", { cache: "no-cache" });
     data = await res.json();

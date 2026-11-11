@@ -71,3 +71,17 @@ Au bout d'une minute, l'app est disponible à l'adresse `https://saaandesign.git
 Tri dans l'app : « À saisir » (par défaut) classe par match moins 3 points par jour d'ancienneté ; les offres de plus de 14 jours sont masquées, avec un bouton pour les afficher.
 
 Mettre `"exemple": true` affiche « Offres d'exemple » en haut de la liste.
+
+## Format de `data/candidatures.json`
+
+Rempli par le fil « Rédiger mes lettres de motivation » quand une candidature est rédigée. L'app l'ajoute aux candidatures du téléphone sans jamais faire reculer une étape. Le dépôt est public : n'y mettre ni lettre ni donnée personnelle.
+
+```json
+{
+  "candidatures": {
+    "<id de l'offre>": { "etape": "Prête", "date": "2026-11-12", "postuler": "https://lien-de-candidature ou adresse@entreprise.fr" }
+  }
+}
+```
+
+Étapes : Prête, Envoyée, Relancée, Entretien, Signé, Refus. Une candidature « Prête » affiche un bouton « Postuler » (lien ou e-mail), puis « C'est envoyé ».

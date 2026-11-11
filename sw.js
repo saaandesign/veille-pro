@@ -1,7 +1,7 @@
 // Service worker : permet d'ouvrir l'app même sans réseau.
 // Les fichiers de l'app sont gardés en cache ; la veille (data/offres.json) est toujours
 // demandée en ligne d'abord, et la dernière version connue sert de secours hors ligne.
-const CACHE = "veille-pro-v2";
+const CACHE = "veille-pro-v3";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "data/offres.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
@@ -25,7 +25,7 @@ self.addEventListener("fetch", (e) => {
   if (!sameOrigin && !isFont) return;
 
   // Réseau d'abord pour la veille et les pages, pour toujours avoir le plus récent.
-  if (sameOrigin && (url.pathname.endsWith("/offres.json") || req.mode === "navigate" || url.pathname.endsWith(".js") || url.pathname.endsWith(".css"))) {
+  if (sameOrigin && (url.pathname.includes("/data/") || req.mode === "navigate" || url.pathname.endsWith(".js") || url.pathname.endsWith(".css"))) {
     e.respondWith(
       fetch(req).then((res) => {
         const copy = res.clone();
