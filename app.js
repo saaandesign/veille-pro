@@ -11,6 +11,14 @@ const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 
 let data = { offres: [], tendances: [] };
 let cand = load();
+// Tri : "priorite" met en tête les offres fraîches et compatibles, pour postuler parmi les premiers.
+let sortMode = "priorite";
+let showOld = false;
+const OLD_DAYS = 14; // au-delà, l'offre est masquée par défaut : trop tard pour être parmi les premiers
+try { sortMode = localStorage.getItem("veille-pro:tri") || "priorite"; } catch (e) {}
+
+// Score de priorité : le match compte, mais chaque jour d'ancienneté coûte 3 points.
+const priority = (o) => (Number(o.match) || 0) - 3 * ageDays(o.publiee);
 
 function load() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { return {}; }
@@ -45,8 +53,18 @@ function paintEye() {
 
 function renderList() {
   const L = $("#list");
-  const offres = [...data.offres].sort((a, b) => b.match - a.match);
-  const recent = offres.filter((o) => ageDays(o.publiee) <= 7).length;
+  const sorters = {
+    priorite: (a, b) => priority(b) - priority(a),
+    recent: (a, b) => ageDays(a.publiee) - ageDays(b.publiee) || b.match - a.match,
+    match: (a, b) => b.match - a.match,
+  };
+  const all = [...data.offres].sort(sorters[sortMode] || sorters.priorite);
+  const oldCount = all.filter((o) => ageDays(o.publiee) > OLD_DAYS).length;
+  const offres = showOld ? all : all.filter((o) => ageDays(o.publiee) <= OLD_DAYS);
+  const recent = all.filter((o) => ageDays(o.publiee) <= 7).length;
+  const tg = $("#toggleOld");
+  tg.hidden = oldCount === 0;
+  tg.textContent = showOld ? "Masquer les offres de plus de 2 semaines" : `Voir aussi ${oldCount} offre${oldCount > 1 ? "s" : ""} de plus de 2 semaines`;
   const maj = data.miseAJour ? ` · mise à jour le ${new Date(data.miseAJour + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long" })}` : "";
   $("#lead").textContent = (data.exemple ? "Offres d'exemple" : `${recent} nouvelle${recent > 1 ? "s" : ""} cette semaine`) + maj;
   L.innerHTML = "";
@@ -56,12 +74,14 @@ function renderList() {
     b.className = "offer" + (d > 21 ? " old" : "");
     b.innerHTML = `<span class="o-txt"><p class="o-title">${esc(o.titre)}</p>
       <span class="o-sub">${esc(o.entreprise)} · ${esc(o.contrat)} · ${esc(o.lieu)}</span>
-      <span class="meta"><span class="age ${ageCls(d)}">${ageTxt(d)}</span>${cand[o.id] ? `<span class="applied">${esc(cand[o.id].etape)}</span>` : ""}</span></span>
+      <span class="meta">${d <= 2 ? '<span class="fresh">Tout frais</span>' : ""}<span class="age ${ageCls(d)}">${ageTxt(d)}</span>${cand[o.id] ? `<span class="applied">${esc(cand[o.id].etape)}</span>` : ""}</span></span>
       <span class="pc">${Number(o.match) || 0}<small>%</small></span>`;
     b.onclick = () => openSheet(o);
     L.appendChild(b);
   });
-  if (!offres.length) L.innerHTML = '<p class="empty">Pas encore d\'offre aujourd\'hui. Reviens après la veille du matin.</p>';
+  if (!offres.length) L.innerHTML = oldCount
+    ? '<p class="empty">Aucune offre de moins de 2 semaines pour l\'instant. La prochaine veille en apportera de nouvelles.</p>'
+    : '<p class="empty">Pas encore d\'offre aujourd\'hui. Reviens après la veille du matin.</p>';
 }
 
 function renderStages() {
@@ -86,8 +106,25 @@ function renderTrends() {
   $("#trends").innerHTML = T.length
     ? T.map((t) => `<div class="trend"><span>${esc(t.nom)}</span><span class="pct">${Number(t.pct) || 0} %</span><span class="bar"><i style="width:${Number(t.pct) || 0}%"></i></span></div>`).join("")
     : '<p class="empty">Les tendances apparaîtront après quelques jours de veille.</p>';
+  renderSources();
   const tip = $("#tip");
   if (data.conseil) { tip.innerHTML = `<b>Conseil du jour</b>${esc(data.conseil)}`; tip.hidden = false; } else tip.hidden = true;
+}
+
+// Coulisses : quels sites la veille a lus, avec quels mots-clés, et ceux qui bloquent.
+function renderSources() {
+  const S = data.sources || [];
+  $("#coulisses").hidden = !S.length && !data.derniereVeille;
+  if (data.derniereVeille) {
+    const t = new Date(data.derniereVeille);
+    $("#lastRun").textContent = `Dernier passage : ${t.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" })} à ${t.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}`;
+  }
+  $("#sources").innerHTML = S.map((x) => {
+    const ok = x.statut === "ok";
+    return `<div class="src"><div class="src-h"><b>${esc(x.nom)}</b><span class="src-st ${ok ? "" : "ko"}">${ok ? `${Number(x.offres) || 0} offre${x.offres > 1 ? "s" : ""}` : "Bloqué"}</span></div>
+      ${x.motsCles && x.motsCles.length ? `<p>${x.motsCles.map(esc).join(" · ")}</p>` : ""}
+      ${!ok && x.raison ? `<p>${esc(x.raison)}</p>` : ""}</div>`;
+  }).join("");
 }
 
 function openSheet(o) {
@@ -127,6 +164,16 @@ function closeSheet() { $("#sheetBg").hidden = true; }
 
 function renderAll() { renderList(); renderStages(); paintEye(); }
 
+document.querySelectorAll(".sort .chip").forEach((c) => {
+  c.setAttribute("aria-pressed", c.dataset.sort === sortMode);
+  c.onclick = () => {
+    sortMode = c.dataset.sort;
+    try { localStorage.setItem("veille-pro:tri", sortMode); } catch (e) {}
+    document.querySelectorAll(".sort .chip").forEach((x) => x.setAttribute("aria-pressed", x === c));
+    renderList();
+  };
+});
+$("#toggleOld").onclick = () => { showOld = !showOld; renderList(); };
 $("#sheetBg").addEventListener("click", (e) => { if (e.target.id === "sheetBg") closeSheet(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSheet(); });
 document.querySelectorAll(".tab").forEach((t) => {

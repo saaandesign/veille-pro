@@ -60,7 +60,13 @@
   <section class="view" id="v-offres">
     <h2>Offres à considérer</h2>
     <p class="lead" id="lead">Chargement de la veille…</p>
+    <div class="sort" role="group" aria-label="Trier les offres">
+      <button class="chip" data-sort="priorite" aria-pressed="true">À saisir</button>
+      <button class="chip" data-sort="recent" aria-pressed="false">Plus récentes</button>
+      <button class="chip" data-sort="match" aria-pressed="false">Meilleur match</button>
+    </div>
     <div id="list"></div>
+    <button class="undo" id="toggleOld" hidden></button>
   </section>
 
   <section class="view" id="v-cand" hidden>
@@ -74,6 +80,11 @@
     <p class="lead" id="trendLead">Ce que les recruteurs demandent en ce moment.</p>
     <div id="trends"></div>
     <div class="tip" id="tip" hidden></div>
+    <div id="coulisses" hidden>
+      <h2 class="h-sub">Coulisses de la veille</h2>
+      <p class="lead" id="lastRun"></p>
+      <div id="sources"></div>
+    </div>
   </section>
 </main>
 
