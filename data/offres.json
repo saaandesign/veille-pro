@@ -1,0 +1,90 @@
+{
+  "miseAJour": "2026-11-11",
+  "exemple": true,
+  "offres": [
+    {
+      "id": "exemple-1",
+      "titre": "Social Media Manager",
+      "entreprise": "Agence créative (exemple)",
+      "contrat": "CDI",
+      "lieu": "Paris 10e",
+      "teletravail": false,
+      "publiee": "2026-11-09",
+      "match": 92,
+      "lien": "",
+      "pourquoi": "Ton passage chez Ogilvy en social creative et ton activité en indépendant collent aux missions. L'anglais est le seul point à appuyer.",
+      "missions": ["Piloter les comptes Instagram, TikTok et LinkedIn de 4 marques", "Concevoir les calendriers éditoriaux", "Suivre les KPI et faire les bilans mensuels"],
+      "attendus": ["Suite Adobe", "CapCut", "Formats courts", "Anglais courant", "3 ans d'expérience"],
+      "angle": "Mets en avant un compte que tu as fait grandir, chiffres à l'appui."
+    },
+    {
+      "id": "exemple-2",
+      "titre": "Content Creator vidéo sport",
+      "entreprise": "Club sportif (exemple)",
+      "contrat": "CDD",
+      "lieu": "Boulogne-Billancourt",
+      "teletravail": false,
+      "publiee": "2026-11-06",
+      "match": 88,
+      "lien": "",
+      "pourquoi": "Ton expérience broadcast (Roland-Garros, PSG, Tour de France) est rare chez les candidats social media.",
+      "missions": ["Tourner et monter les contenus jour de match", "Créer des formats verticaux pour les réseaux"],
+      "attendus": ["Tournage terrain", "Premiere Pro", "Disponible le week-end"],
+      "angle": "Raconte que tu connais les coulisses d'un direct sportif, côté caméra."
+    },
+    {
+      "id": "exemple-3",
+      "titre": "Directeur artistique junior",
+      "entreprise": "Studio de design (exemple)",
+      "contrat": "Freelance",
+      "lieu": "100 % télétravail",
+      "teletravail": true,
+      "publiee": "2026-11-10",
+      "match": 81,
+      "lien": "",
+      "pourquoi": "Ton portfolio montre logotypes et identités. Figma n'apparaît pas encore dans tes outils.",
+      "missions": ["Créer des identités visuelles", "Décliner les chartes sur le digital"],
+      "attendus": ["Illustrator", "Figma", "Portfolio identité"],
+      "angle": "Envoie 3 projets d'identité, pas plus, avec une ligne d'explication chacun."
+    },
+    {
+      "id": "exemple-4",
+      "titre": "Chef de projet social media",
+      "entreprise": "Annonceur événementiel (exemple)",
+      "contrat": "CDI",
+      "lieu": "Rambouillet",
+      "teletravail": false,
+      "publiee": "2026-10-30",
+      "match": 76,
+      "lien": "",
+      "pourquoi": "Bon match sur l'événementiel, moins sur la gestion de budget.",
+      "missions": ["Coordonner les prestataires créa", "Gérer la couverture live des événements"],
+      "attendus": ["Gestion de projet", "Budget", "Permis B"],
+      "angle": "Parle de ta capacité à tenir un planning sur un tournage."
+    },
+    {
+      "id": "exemple-5",
+      "titre": "Community manager",
+      "entreprise": "Marque lifestyle (exemple)",
+      "contrat": "CDI",
+      "lieu": "Paris 2e",
+      "teletravail": false,
+      "publiee": "2026-10-16",
+      "match": 70,
+      "lien": "",
+      "pourquoi": "Poste un peu en dessous de ton niveau, et l'annonce date de près d'un mois.",
+      "missions": ["Animer la communauté", "Modérer et répondre aux messages"],
+      "attendus": ["Ton de marque", "Canva", "1 à 2 ans d'expérience"],
+      "angle": "À tenter seulement si tu as le temps."
+    }
+  ],
+  "tendances": [
+    { "nom": "Formats courts (Reels, TikTok)", "pct": 72 },
+    { "nom": "Suite Adobe", "pct": 68 },
+    { "nom": "IA générative", "pct": 54 },
+    { "nom": "Suivi des KPI", "pct": 49 },
+    { "nom": "Anglais", "pct": 41 },
+    { "nom": "Figma", "pct": 33 }
+  ],
+  "conseil": "Les formats courts reviennent dans 7 offres sur 10. Mets ta série « Épisode Créa » en tête de ton portfolio."
+}
