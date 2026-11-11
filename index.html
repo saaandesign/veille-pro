@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veille Pro</title>
+<meta name="description" content="Ma veille recrutement et le suivi de mes candidatures.">
+<meta name="theme-color" content="#262222">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Veille Pro">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&text=%E5%BF%83&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="daruma" viewBox="0 0 200 200">
+      <path d="M100 10C152 10 188 50 188 104C188 160 150 192 100 192C50 192 12 160 12 104C12 50 48 10 100 10Z" fill="#e13232"/>
+      <path d="M34 118Q38 150 58 172M166 118Q162 150 142 172M46 128Q50 150 64 166M154 128Q150 150 136 166" stroke="#fafaf9" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="100" cy="82" rx="60" ry="48" fill="#fafaf9"/>
+      <path d="M52 56Q70 40 90 52M148 56Q130 40 110 52" stroke="#e13232" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <circle cx="74" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
+      <circle cx="74" cy="80" r="10" fill="#262222"/>
+      <circle cx="126" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
+      <path d="M93 96Q100 89 107 96" stroke="#e13232" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M100 108C88 98 66 96 50 108C66 112 84 116 100 108ZM100 108C112 98 134 96 150 108C134 112 116 116 100 108Z" fill="#e13232"/>
+      <path d="M88 118v6M96 119v7M104 119v7M112 118v6" stroke="#e13232" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="100" y="178" text-anchor="middle" font-family="'Noto Serif JP',serif" font-weight="900" font-size="46" fill="#fafaf9">心</text>
+    </symbol>
+  </defs>
+</svg>
+
+<main class="app">
+  <header class="top">
+    <div>
+      <h1 class="day" id="day">Aujourd'hui</h1>
+      <div class="date" id="date"></div>
+    </div>
+  </header>
+
+  <section class="wish" aria-label="Ton Daruma">
+    <svg viewBox="0 0 200 200" role="img" aria-label="Daruma, un œil peint, le second en cours">
+      <defs><clipPath id="eyeClip"><circle cx="126" cy="80" r="10"/></clipPath></defs>
+      <use href="#daruma"/>
+      <rect id="eyeInk" x="114" y="90" width="24" height="0" fill="#262222" clip-path="url(#eyeClip)"/>
+    </svg>
+    <h2 class="wish-title">Ton vœu : trouver ton match</h2>
+    <div class="prog" id="prog">Second œil peint à 0 %</div>
+  </section>
+
+  <section class="view" id="v-offres">
+    <h2>Offres à considérer</h2>
+    <p class="lead" id="lead">Chargement de la veille…</p>
+    <div id="list"></div>
+  </section>
+
+  <section class="view" id="v-cand" hidden>
+    <h2>Mes candidatures</h2>
+    <p class="lead">Chaque étape franchie peint un peu plus l'œil du Daruma.</p>
+    <div id="stages"></div>
+  </section>
+
+  <section class="view" id="v-trend" hidden>
+    <h2>Tendances</h2>
+    <p class="lead" id="trendLead">Ce que les recruteurs demandent en ce moment.</p>
+    <div id="trends"></div>
+    <div class="tip" id="tip" hidden></div>
+  </section>
+</main>
+
+<nav class="nav"><div class="tabs" role="tablist">
+  <button class="tab" role="tab" aria-selected="true" data-v="v-offres">Offres</button>
+  <button class="tab" role="tab" aria-selected="false" data-v="v-cand">Candidatures</button>
+  <button class="tab" role="tab" aria-selected="false" data-v="v-trend">Tendances</button>
+</div></nav>
+
+<div class="sheet-bg" id="sheetBg" hidden><div class="sheet" role="dialog" aria-modal="true" id="sheet"></div></div>
+
+<script src="app.js"></script>
+</body>
+</html>

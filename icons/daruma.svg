@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <path d="M100 10C152 10 188 50 188 104C188 160 150 192 100 192C50 192 12 160 12 104C12 50 48 10 100 10Z" fill="#e13232"/>
+      <path d="M34 118Q38 150 58 172M166 118Q162 150 142 172M46 128Q50 150 64 166M154 128Q150 150 136 166" stroke="#fafaf9" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="100" cy="82" rx="60" ry="48" fill="#fafaf9"/>
+      <path d="M52 56Q70 40 90 52M148 56Q130 40 110 52" stroke="#e13232" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <circle cx="74" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
+      <circle cx="74" cy="80" r="10" fill="#262222"/>
+      <circle cx="126" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
+      <path d="M93 96Q100 89 107 96" stroke="#e13232" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M100 108C88 98 66 96 50 108C66 112 84 116 100 108ZM100 108C112 98 134 96 150 108C134 112 116 116 100 108Z" fill="#e13232"/>
+      <path d="M88 118v6M96 119v7M104 119v7M112 118v6" stroke="#e13232" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="100" y="178" text-anchor="middle" font-family="'Noto Serif JP',serif" font-weight="900" font-size="46" fill="#fafaf9">心</text>
+    </svg>
