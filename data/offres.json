@@ -3,82 +3,85 @@
   "exemple": false,
   "offres": [
     {
-      "id": "jobijoba-912b7b6d3f52dceb55f20956fe550d35",
-      "titre": "Digital & Content Manager",
-      "entreprise": "Fédération française de cyclisme",
-      "contrat": "CDI",
-      "lieu": "Montigny-le-Bretonneux (78)",
-      "teletravail": false,
-      "publiee": "2026-10-15",
-      "match": 85,
-      "lien": "https://www.jobijoba.com/fr/annonce/54/912b7b6d3f52dceb55f20956fe550d35",
-      "pourquoi": "Le sport et le cyclisme collent à ton passé broadcast (Tour de France). L'annonce détaillée n'a pas pu être lue en entier : vérifie les attendus.",
-      "missions": [
-        "Animer les réseaux de la fédération (Instagram, Facebook, TikTok, LinkedIn, X)",
-        "Créer les contenus",
-        "Faire la veille des réseaux"
-      ],
-      "attendus": [
-        "Formats courts (Reels, TikTok)",
-        "Community management",
-        "Création de contenus"
-      ],
-      "angle": "Ouvre ta candidature sur le Tour de France : tu connais le vélo de l'intérieur, côté caméra."
-    },
-    {
-      "id": "hellowork-84505114",
-      "titre": "Consultant social media & stratégie éditoriale (médias audiovisuels, YouTube)",
-      "entreprise": "Média d'information (via Mon Consultant Indépendant)",
+      "id": "jobijoba-53c47ff0337604b9f9c4ee190f13e69d",
+      "titre": "Monteur vidéo / motion designer (freelance)",
+      "entreprise": "Média audiovisuel public (via Collective.work)",
       "contrat": "Freelance",
       "lieu": "Paris",
       "teletravail": false,
-      "publiee": "2026-10-16",
-      "match": 80,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/84505114.html",
-      "pourquoi": "Un média audiovisuel qui veut découper ses vidéos en formats réseaux : ton double profil broadcast + social media est pile dedans. Ils demandent 5 ans d'expérience.",
+      "publiee": "2026-11-11",
+      "match": 88,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/53c47ff0337604b9f9c4ee190f13e69d",
+      "pourquoi": "Publiée ce matin : montage d'actu pour les réseaux, motion et tournage au smartphone pour un média public. Ton passé broadcast et ton travail social media collent parfaitement. 350 € par jour, 3 mois renouvelables dès le 30 novembre, sur place à 90 %.",
       "missions": [
-        "Définir la stratégie digitale et les lignes éditoriales",
-        "Créer et optimiser les comptes Instagram, YouTube, LinkedIn, Facebook",
-        "Découper les vidéos en teasers et extraits",
-        "Modérer la communauté"
+        "Monter et finaliser des vidéos d'actualité pour les réseaux",
+        "Créer des animations en motion design",
+        "Faire les miniatures et les carrousels",
+        "Tourner au smartphone"
       ],
       "attendus": [
-        "Premiere Pro ou Final Cut",
-        "Canva",
         "Montage vidéo",
-        "Présence sur place (80 %)",
-        "Week-ends ponctuels",
-        "5 ans d'expérience"
+        "Motion design",
+        "Formats courts (Reels, TikTok)",
+        "2 ans d'expérience",
+        "Français écrit parfait"
       ],
-      "angle": "Additionne tes années broadcast et social media pour montrer que tu dépasses les 5 ans, et joins un exemple de vidéo longue découpée en formats courts."
+      "angle": "Postule aujourd'hui avec 2 vidéos d'actu courtes montées par toi et rappelle tes années broadcast (Roland-Garros, TF1, Tour de France)."
     },
     {
-      "id": "hellowork-84558283",
-      "titre": "Social Media Manager",
-      "entreprise": "Les Bienheureux (spiritueux)",
+      "id": "jobijoba-b0247ed5ddf6cdf09fad9258744b1ef1",
+      "titre": "DA vidéo / vidéo IA / motion designer",
+      "entreprise": "CHERRY (groupe Amalthea)",
       "contrat": "CDI",
-      "lieu": "Paris 1er",
+      "lieu": "Paris 8e",
       "teletravail": true,
-      "publiee": "2026-10-19",
-      "match": 78,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/84558283.html",
-      "pourquoi": "Poste complet entre calendrier, production et montage court, proche de ce que tu fais en indépendant. 3 ans demandés, tu les as.",
+      "publiee": "2026-11-05",
+      "match": 86,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/b0247ed5ddf6cdf09fad9258744b1ef1",
+      "pourquoi": "Le poste réunit direction artistique, montage, motion et IA : c'est ton profil couteau suisse. 35 à 40 k€, télétravail possible après l'intégration.",
       "missions": [
-        "Construire et tenir le calendrier éditorial",
-        "Produire et publier les contenus",
-        "Piloter les agences partenaires",
-        "Faire le bilan mensuel"
+        "Imaginer les concepts et assurer la direction artistique",
+        "Faire les storyboards",
+        "Monter et animer des vidéos pensées pour les réseaux",
+        "Utiliser les outils d'IA en création"
       ],
       "attendus": [
-        "Instagram, TikTok, LinkedIn",
-        "Meta Business Suite",
+        "After Effects",
+        "Premiere Pro",
+        "DaVinci Resolve",
         "Montage vidéo",
-        "Formats courts (Reels, TikTok)",
-        "Retouche photo",
-        "Suivi des KPI",
+        "Motion design",
+        "IA générative",
+        "Portfolio ou bande démo"
+      ],
+      "angle": "Envoie une bande démo d'une minute qui mélange tes montages, ton motion et un projet fait avec Magnific ou une autre IA."
+    },
+    {
+      "id": "wttj-france-medias-monde-graphiste-motion-designer",
+      "titre": "Graphiste - motion designer",
+      "entreprise": "France Médias Monde (France 24, RFI)",
+      "contrat": "CDI",
+      "lieu": "Issy-les-Moulineaux (92)",
+      "teletravail": true,
+      "publiee": "2026-11-03",
+      "match": 84,
+      "lien": "https://www.welcometothejungle.com/fr/companies/france-medias-monde/jobs/graphiste-motion-designer-h-f_issy-les-moulineaux",
+      "pourquoi": "Habillage d'antenne et direction artistique pour des chaînes d'info : ton passé d'opérateur broadcast est un vrai plus. 40 à 45 k€, 3 à 5 ans demandés.",
+      "missions": [
+        "Diriger les projets graphiques du groupe",
+        "Garder un habillage d'antenne cohérent entre les chaînes",
+        "Faire respecter les chartes graphiques",
+        "Relire le travail des graphistes, motion designers et prestataires"
+      ],
+      "attendus": [
+        "Suite Adobe",
+        "After Effects",
+        "Premiere Pro",
+        "Motion design",
+        "Typographie",
         "3 ans d'expérience"
       ],
-      "angle": "Montre un calendrier éditorial que tu as tenu pour un client SAAAN CRTN et le bilan chiffré qui va avec."
+      "angle": "Mets en avant que tu connais la télé de l'intérieur (régie, direct) et montre un habillage ou une charte que tu as déclinée en animation."
     },
     {
       "id": "hellowork-84736484",
@@ -107,30 +110,46 @@
       "angle": "Mets en avant que tu sais tout faire seul, du tournage au visuel, et négocie le salaire vers le haut."
     },
     {
-      "id": "hellowork-80079226",
-      "titre": "Monteur vidéo (formats courts)",
-      "entreprise": "Sézane",
+      "id": "jobijoba-62140fa64e60aa2626f1def28d243d49",
+      "titre": "Directeur artistique senior social media",
+      "entreprise": "Mioche Studio",
+      "contrat": "CDI",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-11-05",
+      "match": 76,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/62140fa64e60aa2626f1def28d243d49",
+      "pourquoi": "Direction artistique de campagnes réseaux sociaux en studio : pile ton expérience Ogilvy et SAAAN CRTN. Le mot « senior » peut faire peur, mais le salaire (40 à 43 k€) reste accessible. L'annonce détaillée est courte : vérifie les attendus.",
+      "missions": [
+        "Superviser la création des campagnes social media",
+        "Encadrer la production des contenus"
+      ],
+      "attendus": [
+        "Direction artistique",
+        "Création graphique",
+        "Formats courts (Reels, TikTok)"
+      ],
+      "angle": "Présente 3 campagnes social media complètes (idée, visuels, vidéo) et ton rôle à chaque étape."
+    },
+    {
+      "id": "jobijoba-9eeac58224be99c7e48d26f82b6aceb0",
+      "titre": "Directeur artistique sport (freelance)",
+      "entreprise": "Team Inside",
       "contrat": "Freelance",
       "lieu": "Paris",
       "teletravail": false,
-      "publiee": "2026-10-13",
+      "publiee": "2026-11-09",
       "match": 74,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/80079226.html",
-      "pourquoi": "Mission de montage pur pour une marque forte : ton œil vidéo est un atout. Ils travaillent sur DaVinci Resolve, que tu dois maîtriser.",
+      "lien": "https://www.jobijoba.com/fr/annonce/54/9eeac58224be99c7e48d26f82b6aceb0",
+      "pourquoi": "Une mission de DA dans le sport, ton terrain (PSG, Roland-Garros, Tour de France). La fiche complète n'a pas pu être lue : vérifie la durée et l'expérience demandée.",
       "missions": [
-        "Monter des vidéos courtes et longues (Reels, TikTok, Shorts)",
-        "Étalonner",
-        "Ajouter accroches, transitions, sous-titres et son",
-        "Décliner les formats"
+        "Assurer la direction artistique de contenus sport"
       ],
       "attendus": [
-        "DaVinci Resolve",
-        "After Effects",
-        "Figma",
-        "Formats courts (Reels, TikTok)",
-        "Montage vidéo"
+        "Direction artistique",
+        "Création graphique"
       ],
-      "angle": "Envoie 3 formats courts rythmés, avec une accroche forte dans les 2 premières secondes."
+      "angle": "Ouvre ton message sur tes années au bord des terrains en broadcast, puis montre un visuel sport que tu as créé."
     },
     {
       "id": "hellowork-84720256",
@@ -158,55 +177,116 @@
       "angle": "Présente-toi comme celui qui rend un secteur technique visuel et vivant, exemples à l'appui."
     },
     {
-      "id": "hellowork-84608032",
-      "titre": "Social Strategist",
-      "entreprise": "BBDO Paris",
+      "id": "jobijoba-c9ade078a40570f1ed64e36fa9cdbf4f",
+      "titre": "Content creator UGC",
+      "entreprise": "Digital Prod",
       "contrat": "CDI",
-      "lieu": "Paris 17e",
+      "lieu": "Paris 4e",
       "teletravail": true,
-      "publiee": "2026-10-20",
-      "match": 70,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/84608032.html",
-      "pourquoi": "Ton passage chez Ogilvy parle à une agence de ce niveau. Mais le poste est surtout stratégie et reco, moins création, et l'anglais courant est exigé.",
+      "publiee": "2026-11-11",
+      "match": 72,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/c9ade078a40570f1ed64e36fa9cdbf4f",
+      "pourquoi": "Annonce publiée ce matin. Ce studio cherche des profils qui écrivent, tournent et montent des vidéos courtes. La fiche complète n'a pas pu être lue : vérifie qu'il ne s'agit pas surtout de face caméra.",
       "missions": [
-        "Écrire les recommandations stratégiques",
-        "Rédiger les briefs créatifs des calendriers",
-        "Analyser les KPI et faire les bilans",
-        "Faire la veille concurrentielle"
+        "Écrire et tourner des vidéos courtes façon UGC",
+        "Monter pour Reels, TikTok et Shorts",
+        "Ajouter sous-titres et animations"
       ],
       "attendus": [
-        "Suivi des KPI",
-        "Anglais",
-        "Stratégie social media",
-        "2 ans d'expérience"
-      ],
-      "angle": "Raconte un brief Ogilvy où tu as transformé une idée en dispositif social, et montre que tu sais lire les chiffres."
-    },
-    {
-      "id": "hellowork-84607775",
-      "titre": "Community Manager Épargne",
-      "entreprise": "Épargne et assurance (via Finaia)",
-      "contrat": "CDI",
-      "lieu": "Paris 12e",
-      "teletravail": false,
-      "publiee": "2026-10-20",
-      "match": 68,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/84607775.html",
-      "pourquoi": "Beaucoup de vidéo native (tournage et montage), ton point fort. Le sujet finance et le Bac+5 demandé t'éloignent un peu. Salaire 40 à 45 k€.",
-      "missions": [
-        "Gérer LinkedIn, Instagram, TikTok et YouTube",
-        "Créer des vidéos natives",
-        "Faire de la pédagogie financière",
-        "Contribuer à l'acquisition digitale"
-      ],
-      "attendus": [
-        "Tournage et montage vidéo",
         "Montage vidéo",
         "Formats courts (Reels, TikTok)",
-        "3 ans d'expérience",
-        "Bac+5"
+        "DaVinci Resolve",
+        "Suite Adobe"
       ],
-      "angle": "Insiste sur ta capacité à rendre un sujet austère simple et regardable en vidéo."
+      "angle": "Postule vite avec 3 vidéos verticales tournées et montées par toi, accroche dans les 2 premières secondes."
+    },
+    {
+      "id": "jobijoba-ae3a2e7c4c463b13459e57e872928aa8",
+      "titre": "Directeur artistique",
+      "entreprise": "Horace (soins pour hommes)",
+      "contrat": "À vérifier",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-11-03",
+      "match": 72,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/ae3a2e7c4c463b13459e57e872928aa8",
+      "pourquoi": "Poste de brand designer côté marque : identité visuelle sur photo, vidéo, boutique et packaging. 42 à 50 k€. Le contrat n'est pas indiqué.",
+      "missions": [
+        "Porter l'identité visuelle de la marque",
+        "Diriger les visuels photo et vidéo",
+        "Décliner sur le packaging et en boutique"
+      ],
+      "attendus": [
+        "Direction artistique",
+        "Identité visuelle",
+        "Suite Adobe"
+      ],
+      "angle": "Montre une identité que tu as créée et déclinée sur plusieurs supports (print, vidéo, réseaux)."
+    },
+    {
+      "id": "jobijoba-a83f08d7dc61a5af9178d32c193b6815",
+      "titre": "Graphiste créatif print et web",
+      "entreprise": "Ville de Versailles",
+      "contrat": "À vérifier",
+      "lieu": "Versailles (78)",
+      "teletravail": false,
+      "publiee": "2026-11-03",
+      "match": 70,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/a83f08d7dc61a5af9178d32c193b6815",
+      "pourquoi": "Proche de chez toi, avec print, web et motion design. Poste public : le contrat (titulaire ou contractuel) est à vérifier. 3 à 4 ans demandés.",
+      "missions": [
+        "Créer les supports print (60 %) et web (40 %)",
+        "Faire vivre la charte graphique",
+        "Réaliser roughs et illustrations"
+      ],
+      "attendus": [
+        "Suite Adobe",
+        "After Effects",
+        "Motion design",
+        "3 ans d'expérience"
+      ],
+      "angle": "Montre des affiches et une animation courte pour une collectivité ou un événement local."
+    },
+    {
+      "id": "jobijoba-fe756d686f2e5816832c08bf6232de19",
+      "titre": "Motion designer",
+      "entreprise": "Nexton",
+      "contrat": "CDI",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-11-10",
+      "match": 68,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/fe756d686f2e5816832c08bf6232de19",
+      "pourquoi": "Annonce d'hier pour du motion design pur, au format Rive (animations intégrées dans des apps ou sites). Le logiciel Rive est peut-être nouveau pour toi. La fiche complète n'a pas pu être lue.",
+      "missions": [
+        "Créer des animations en motion design",
+        "Livrer des fichiers Rive prêts à intégrer"
+      ],
+      "attendus": [
+        "Motion design",
+        "Rive"
+      ],
+      "angle": "Dis franchement que tu apprends Rive et montre tes meilleures animations After Effects."
+    },
+    {
+      "id": "jobijoba-046bfc26622754a006b0637205d3d43d",
+      "titre": "Content creator",
+      "entreprise": "Culinary Agency",
+      "contrat": "À vérifier",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-11-10",
+      "match": 66,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/046bfc26622754a006b0637205d3d43d",
+      "pourquoi": "Annonce d'hier dans une agence culinaire, création de contenus pour les réseaux. 35 k€. La fiche complète n'a pas pu être lue.",
+      "missions": [
+        "Créer des contenus pour les réseaux des clients"
+      ],
+      "attendus": [
+        "Formats courts (Reels, TikTok)",
+        "Montage vidéo"
+      ],
+      "angle": "Joins une vidéo courte de produit filmée et montée par toi, avec un vrai rythme."
     },
     {
       "id": "hellowork-85315030",
@@ -235,30 +315,25 @@
       "angle": "Mets en avant ta gestion de projet (Extreme Agency, SAAAN CRTN) et ton côté couteau suisse créatif."
     },
     {
-      "id": "hellowork-84626308",
-      "titre": "Graphiste - Motion designer",
-      "entreprise": "Junk (restauration, via France Travail)",
+      "id": "jobijoba-69630cf344638000908d29c9ce86c73f",
+      "titre": "Directeur artistique packaging",
+      "entreprise": "Olivier Mery",
       "contrat": "CDI",
-      "lieu": "Paris 9e",
-      "teletravail": false,
-      "publiee": "2026-10-20",
+      "lieu": "Clichy (92)",
+      "teletravail": true,
+      "publiee": "2026-11-06",
       "match": 62,
-      "lien": "https://www.hellowork.com/fr-fr/emplois/84626308.html",
-      "pourquoi": "Identité visuelle, contenus animés et montage pour Instagram et TikTok : bon mélange design et vidéo. La 3D (Blender, Cinema 4D) et 5 ans demandés sont des freins. Salaire 30 k€.",
+      "lien": "https://www.jobijoba.com/fr/annonce/54/69630cf344638000908d29c9ce86c73f",
+      "pourquoi": "DA en CDI avec télétravail partiel, mais centré sur le packaging, moins sur la vidéo. 32 à 36 k€.",
       "missions": [
-        "Faire évoluer l'identité visuelle",
-        "Créer les supports print et digitaux",
-        "Produire des contenus animés pour Instagram et TikTok",
-        "Animer en 2D/3D et monter"
+        "Créer et décliner des packagings"
       ],
       "attendus": [
+        "Direction artistique",
         "Suite Adobe",
-        "After Effects",
-        "Premiere Pro",
-        "Blender ou Cinema 4D",
-        "Anglais"
+        "Création graphique"
       ],
-      "angle": "Montre une identité que tu as créée puis déclinée en formats animés."
+      "angle": "Mets en avant ton sens de l'identité visuelle et ta rigueur sur les fichiers d'impression."
     },
     {
       "id": "hellowork-85107947",
@@ -287,6 +362,26 @@
       "angle": "À tenter si tu es prêt à apprendre AEM : dis-le franchement et mise sur la vidéo."
     },
     {
+      "id": "jobijoba-8cc2f4347c8338967e948bbc59f18810",
+      "titre": "Social media manager",
+      "entreprise": "Pullman Paris Montparnasse",
+      "contrat": "À vérifier",
+      "lieu": "Paris 14e",
+      "teletravail": false,
+      "publiee": "2026-11-07",
+      "match": 60,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/8cc2f4347c8338967e948bbc59f18810",
+      "pourquoi": "Réseaux d'un grand hôtel parisien, 3 400 à 3 700 € brut par mois. La fiche complète n'a pas pu être lue : vérifie la part de création.",
+      "missions": [
+        "Gérer les réseaux sociaux de l'hôtel"
+      ],
+      "attendus": [
+        "Community management",
+        "Création de contenus"
+      ],
+      "angle": "Propose une idée de série vidéo courte sur les coulisses de l'hôtel."
+    },
+    {
       "id": "jobijoba-81c073566b70179fefc8598ab1363c16",
       "titre": "Spécialiste CRM et réseaux sociaux BMW Motorrad",
       "entreprise": "BMW",
@@ -310,6 +405,47 @@
         "Gestion d'agences"
       ],
       "angle": "Mets en avant ta coordination de prestataires et propose une idée de contenu moto/événement."
+    },
+    {
+      "id": "jobijoba-a399ad2a3efda76bee56495741656c5f",
+      "titre": "Graphiste",
+      "entreprise": "Sodexo",
+      "contrat": "CDD",
+      "lieu": "Guyancourt (78)",
+      "teletravail": false,
+      "publiee": "2026-11-09",
+      "match": 58,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/a399ad2a3efda76bee56495741656c5f",
+      "pourquoi": "CDD de graphiste dans les Yvelines, utile pour sortir vite du travail alimentaire. 2 100 € brut par mois, en dessous de ton niveau. La fiche complète n'a pas pu être lue.",
+      "missions": [
+        "Créer des supports de communication"
+      ],
+      "attendus": [
+        "Création graphique",
+        "Suite Adobe"
+      ],
+      "angle": "Présente-le comme une mission courte où tu es opérationnel dès le premier jour."
+    },
+    {
+      "id": "jobijoba-4ff273ec0161544c8560f26d62dfae06",
+      "titre": "Global social media manager",
+      "entreprise": "Delsey",
+      "contrat": "À vérifier",
+      "lieu": "Paris",
+      "teletravail": false,
+      "publiee": "2026-11-10",
+      "match": 56,
+      "lien": "https://www.jobijoba.com/fr/annonce/54/4ff273ec0161544c8560f26d62dfae06",
+      "pourquoi": "Annonce d'hier pour une marque connue, mais poste international plutôt stratégie que création. Anglais probablement exigé. La fiche complète n'a pas pu être lue.",
+      "missions": [
+        "Piloter les réseaux sociaux de la marque à l'international"
+      ],
+      "attendus": [
+        "Stratégie social media",
+        "Anglais",
+        "Suivi des KPI"
+      ],
+      "angle": "Montre ce que tu sais produire toi-même, pas seulement piloter."
     },
     {
       "id": "jobijoba-23118404e4edf0dfbe0c55a55544c3bb",
@@ -340,29 +476,213 @@
   ],
   "tendances": [
     {
-      "nom": "Montage vidéo",
-      "pct": 62
-    },
-    {
-      "nom": "Suivi des KPI",
-      "pct": 54
-    },
-    {
-      "nom": "Formats courts (Reels, TikTok)",
-      "pct": 46
+      "nom": "Suite Adobe",
+      "pct": 40
     },
     {
       "nom": "Création graphique",
-      "pct": 31
+      "pct": 40
     },
     {
-      "nom": "Anglais",
-      "pct": 31
+      "nom": "Montage vidéo",
+      "pct": 35
     },
     {
-      "nom": "Suite Adobe",
-      "pct": 31
+      "nom": "Formats courts (Reels, TikTok)",
+      "pct": 30
+    },
+    {
+      "nom": "Motion design",
+      "pct": 25
+    },
+    {
+      "nom": "Suivi des KPI",
+      "pct": 25
     }
   ],
-  "conseil": "Le montage vidéo revient dans 6 offres sur 10 : mets 3 vidéos courtes montées par toi en tête de ton portfolio, et vise d'abord la Fédération française de cyclisme."
+  "conseil": "La suite Adobe et la création graphique arrivent en tête, juste devant le montage vidéo : ouvre ton portfolio sur une bande démo d'une minute (visuels, montage, motion) et postule aujourd'hui à la mission de monteur pour le média public.",
+  "derniereVeille": "2026-11-11T13:35:00+01:00",
+  "sources": [
+    {
+      "nom": "Jobijoba",
+      "statut": "ok",
+      "offres": 13,
+      "motsCles": [
+        "graphiste",
+        "motion designer",
+        "directeur artistique",
+        "brand designer",
+        "community manager",
+        "content creator",
+        "social media manager"
+      ],
+      "raison": "Paris complet ; Yvelines et Essonne seulement pour « graphiste » (limite de lecture atteinte). Certaines fiches renvoient vers un site partenaire protégé par un contrôle anti-robot."
+    },
+    {
+      "nom": "Welcome to the Jungle",
+      "statut": "ok",
+      "offres": 1,
+      "motsCles": [
+        "graphiste",
+        "motion designer",
+        "brand designer",
+        "directeur artistique"
+      ],
+      "raison": "La recherche est interdite (robots.txt) ; les pages métier et les fiches se lisent, avec des dates approximatives (« il y a 8 jours »)."
+    },
+    {
+      "nom": "HelloWork",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "graphiste",
+        "motion designer",
+        "directeur artistique",
+        "designer graphique",
+        "monteur vidéo",
+        "brand designer",
+        "vidéaste",
+        "social media manager",
+        "content manager",
+        "community manager",
+        "chef de projet digital",
+        "chargé de communication digitale"
+      ],
+      "raison": "Les pages métier par ville ont été refusées par le site (erreur puis limite de requêtes dépassée)."
+    },
+    {
+      "nom": "Profil Culture",
+      "statut": "ok",
+      "offres": 0,
+      "motsCles": [
+        "design",
+        "graphisme"
+      ],
+      "raison": "Lisible, mais les 30 offres les plus récentes datent du 22 au 26 octobre."
+    },
+    {
+      "nom": "Indeed",
+      "statut": "ok",
+      "offres": 0,
+      "motsCles": [
+        "motion designer"
+      ],
+      "raison": "Lisible, mais presque uniquement des alternances ; les fiches passent par un lien interdit (robots.txt)."
+    },
+    {
+      "nom": "France Travail",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "graphiste"
+      ],
+      "raison": "Recherche interdite (robots.txt) ; les fiches trouvées par moteur de recherche datent de 2025."
+    },
+    {
+      "nom": "APEC",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "directeur artistique"
+      ],
+      "raison": "Connexion obligatoire."
+    },
+    {
+      "nom": "Meteojob",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "graphiste"
+      ],
+      "raison": "Lecture refusée par le site."
+    },
+    {
+      "nom": "Cadremploi",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "directeur artistique"
+      ],
+      "raison": "Blocage anti-robot."
+    },
+    {
+      "nom": "Glassdoor",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "graphiste"
+      ],
+      "raison": "Lecture refusée par le site."
+    },
+    {
+      "nom": "LinkedIn Jobs",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "motion designer"
+      ],
+      "raison": "Interdit (robots.txt)."
+    },
+    {
+      "nom": "Talent.io",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "designer"
+      ],
+      "raison": "Interdit (robots.txt)."
+    },
+    {
+      "nom": "Malt",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "motion designer",
+        "graphiste"
+      ],
+      "raison": "Connexion obligatoire pour voir les missions."
+    },
+    {
+      "nom": "Freelance Radar",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "graphiste",
+        "motion designer"
+      ],
+      "raison": "Connexion obligatoire (et le site ne couvre pas les plateformes françaises)."
+    },
+    {
+      "nom": "Sites carrières (agences, clubs)",
+      "statut": "bloque",
+      "offres": 0,
+      "motsCles": [
+        "directeur artistique",
+        "motion designer",
+        "vidéaste"
+      ],
+      "raison": "Publicis : offres chargées en JavaScript ; Havas : interdit (robots.txt) ; BETC : pas d'offre sur la page ; PSG : page introuvable."
+    },
+    {
+      "nom": "Recherche web",
+      "statut": "ok",
+      "offres": 0,
+      "motsCles": [
+        "brand designer",
+        "designer graphique",
+        "graphiste",
+        "graphiste motion",
+        "motion designer",
+        "directeur artistique",
+        "DA junior",
+        "créatif digital",
+        "content creator",
+        "vidéaste monteur",
+        "social media designer",
+        "chef de projet social media",
+        "social media manager"
+      ],
+      "raison": "Environ 40 pistes vérifiées : offres fermées, trop anciennes ou sans date fiable (ex. Orus, brand designer, sans date)."
+    }
+  ]
 }
