@@ -64,6 +64,22 @@ h2 { font-family: var(--f-title); font-weight: 300; font-size: 24px; margin: 0 0
 .pc small { font-size: 13px; }
 .empty { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
 
+/* Tri */
+.sort { display: flex; gap: 8px; overflow-x: auto; padding: 6px 0 4px; scrollbar-width: none; }
+.chip { flex: none; font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; cursor: pointer; }
+.chip[aria-pressed="true"] { color: var(--ink); background: var(--paper); border-color: var(--paper); }
+.chip:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.fresh { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; color: var(--ink); background: var(--red); color: var(--paper); border-radius: 999px; padding: 1px 7px; }
+
+/* Coulisses */
+.h-sub { margin-top: 36px; font-size: 20px; }
+.src { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.src-h { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.src-h b { font-family: var(--f-title); font-weight: 400; }
+.src-st { font-size: 12px; white-space: nowrap; color: var(--muted); }
+.src-st.ko { color: var(--red); }
+.src p { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+
 /* Candidatures */
 .stage { padding: 14px 0; border-bottom: 1px solid var(--line); }
 .stage-h { display: flex; justify-content: space-between; align-items: baseline; }

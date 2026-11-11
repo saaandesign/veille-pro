@@ -59,8 +59,15 @@ Au bout d'une minute, l'app est disponible à l'adresse `https://saaandesign.git
     }
   ],
   "tendances": [{ "nom": "Suite Adobe", "pct": 68 }],
-  "conseil": "Le conseil du jour"
+  "conseil": "Le conseil du jour",
+  "derniereVeille": "2026-11-11T12:05:00+01:00",
+  "sources": [
+    { "nom": "HelloWork", "statut": "ok", "offres": 9, "motsCles": ["social media manager", "brand designer"] },
+    { "nom": "Indeed", "statut": "bloque", "raison": "Le site refuse la lecture automatique." }
+  ]
 }
 ```
+
+Tri dans l'app : « À saisir » (par défaut) classe par match moins 3 points par jour d'ancienneté ; les offres de plus de 14 jours sont masquées, avec un bouton pour les afficher.
 
 Mettre `"exemple": true` affiche « Offres d'exemple » en haut de la liste.
