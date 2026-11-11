@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="splash" id="boot" aria-hidden="true"></div>
+<div class="ptr" id="ptr" aria-hidden="true"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -28,9 +30,6 @@
       <path d="M34 118Q38 150 58 172M166 118Q162 150 142 172M46 128Q50 150 64 166M154 128Q150 150 136 166" stroke="#fafaf9" stroke-width="4" fill="none" stroke-linecap="round"/>
       <ellipse cx="100" cy="82" rx="60" ry="48" fill="#fafaf9"/>
       <path d="M52 56Q70 40 90 52M148 56Q130 40 110 52" stroke="#e13232" stroke-width="7" fill="none" stroke-linecap="round"/>
-      <circle cx="74" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
-      <circle cx="74" cy="80" r="10" fill="#262222"/>
-      <circle cx="126" cy="80" r="16" fill="#fafaf9" stroke="#e13232" stroke-width="3"/>
       <path d="M93 96Q100 89 107 96" stroke="#e13232" stroke-width="3" fill="none" stroke-linecap="round"/>
       <path d="M100 108C88 98 66 96 50 108C66 112 84 116 100 108ZM100 108C112 98 134 96 150 108C134 112 116 116 100 108Z" fill="#e13232"/>
       <path d="M88 118v6M96 119v7M104 119v7M112 118v6" stroke="#e13232" stroke-width="2.5" stroke-linecap="round"/>
@@ -45,14 +44,13 @@
       <h1 class="day" id="day">Aujourd'hui</h1>
       <div class="date" id="date"></div>
     </div>
+    <button class="profile-btn" id="openProfile" aria-label="Mon profil">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.5 20c1.4-3.6 4.2-5.2 7.5-5.2s6.1 1.6 7.5 5.2"/></svg>
+    </button>
   </header>
 
   <section class="wish" aria-label="Ton Daruma">
-    <svg viewBox="0 0 200 200" role="img" aria-label="Daruma, un œil peint, le second en cours">
-      <defs><clipPath id="eyeClip"><circle cx="126" cy="80" r="10"/></clipPath></defs>
-      <use href="#daruma"/>
-      <rect id="eyeInk" x="114" y="90" width="24" height="0" fill="#262222" clip-path="url(#eyeClip)"/>
-    </svg>
+    <div id="wishArt"></div>
     <h2 class="wish-title">Ton vœu : trouver ton match</h2>
     <div class="prog" id="prog">Second œil peint à 0 %</div>
   </section>
@@ -93,6 +91,29 @@
   <button class="tab" role="tab" aria-selected="false" data-v="v-cand">Candidatures</button>
   <button class="tab" role="tab" aria-selected="false" data-v="v-trend">Tendances</button>
 </div></nav>
+
+<section class="profile" id="profile" hidden aria-label="Mon profil">
+  <div class="page">
+    <div class="grip"></div>
+    <div class="p-top"><span class="eyebrow">Mon profil</span><button class="undo" id="closeProfile">Fermer</button></div>
+    <label class="sr" for="pNom">Prénom et nom</label>
+    <input class="p-name" id="pNom" placeholder="Prénom Nom" autocomplete="name">
+    <div class="field"><label for="pLieu">Localisation</label><input id="pLieu" placeholder="Ex. Rambouillet, ou 100 % télétravail" autocomplete="address-level2"></div>
+    <div class="field"><label for="pLinkedin">Profil LinkedIn</label><input id="pLinkedin" type="url" inputmode="url" placeholder="https://www.linkedin.com/in/…"></div>
+    <div class="field">
+      <label for="pKeyInput">Mots-clés de recherche</label>
+      <div class="key-row"><input id="pKeyInput" placeholder="Ex. brand designer, motion" enterkeyhint="done"><button class="btn small" id="pKeyAdd">Ajouter</button></div>
+      <div class="tags" id="pKeys"></div>
+      <button class="btn ghost" id="pSend">Envoyer mes mots-clés à la veille</button>
+      <p class="hint">Ouvre GitHub avec tes mots-clés et ta zone : valide pour que les prochaines veilles les utilisent. Ton nom et tes fichiers ne sont jamais envoyés.</p>
+    </div>
+    <div class="field"><span class="label">Mes CV</span><div id="pCvs"></div>
+      <label class="btn ghost file-btn">Ajouter un CV (PDF)<input type="file" id="pCvFile" accept="application/pdf,.pdf,.doc,.docx" multiple hidden></label></div>
+    <div class="field"><span class="label">Mes lettres de motivation</span><div id="pLettres"></div>
+      <label class="btn ghost file-btn">Ajouter une lettre (PDF)<input type="file" id="pLettreFile" accept="application/pdf,.pdf,.doc,.docx" multiple hidden></label></div>
+    <p class="hint">Tout reste enregistré sur ce téléphone.</p>
+  </div>
+</section>
 
 <div class="sheet-bg" id="sheetBg" hidden><div class="sheet" role="dialog" aria-modal="true" id="sheet"></div></div>
 

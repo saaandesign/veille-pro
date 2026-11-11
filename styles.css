@@ -151,3 +151,88 @@ h2 { font-family: var(--f-title); font-weight: 300; font-size: 24px; margin: 0 0
   @keyframes up { from { transform: translateY(30px); opacity: .6; } }
 }
 @media (prefers-reduced-motion: reduce) { #eyeInk { transition: none; } }
+
+/* ---------- Daruma animé ---------- */
+.daruma .look { animation: look 7s ease-in-out infinite; }
+.daruma .blink { transform-box: view-box; transform-origin: 100px 80px; animation: blink 7s ease-in-out infinite; }
+.daruma.still .look, .daruma.still .blink { animation: none; }
+@keyframes look {
+  0%, 22% { transform: translateX(0); }
+  28%, 42% { transform: translateX(-4px); }
+  50%, 64% { transform: translateX(4px); }
+  72%, 100% { transform: translateX(0); }
+}
+@keyframes blink {
+  0%, 84%, 90%, 100% { transform: scaleY(1); }
+  87% { transform: scaleY(.08); }
+}
+
+/* ---------- Écran d'ouverture ---------- */
+.splash { position: fixed; inset: 0; z-index: 60; background: var(--ink); display: grid; place-items: center; overflow: hidden; transition: opacity .35s ease; }
+.splash .splash-d { width: 180px; height: auto; transform-origin: 63% 40%; animation: splashIn .45s ease-out both; }
+.splash.zoom .splash-d { animation: plunge .9s cubic-bezier(.7, 0, .84, 0) forwards; }
+.splash.out { opacity: 0; pointer-events: none; }
+@keyframes splashIn { from { opacity: 0; transform: scale(.85); } }
+@keyframes plunge { to { transform: scale(90); } }
+
+/* ---------- Tirer pour actualiser ---------- */
+.ptr { position: fixed; top: calc(10px + env(safe-area-inset-top, 0px)); left: 50%; z-index: 4; width: 28px; height: 28px; margin-left: 0;
+  border-radius: 50%; border: 2px solid var(--line); border-top-color: var(--red); opacity: 0; transform: translate(-50%, 0); pointer-events: none; }
+.ptr.ready { border-color: var(--red); border-top-color: var(--paper); }
+.ptr.spin { opacity: 1 !important; animation: spin .7s linear infinite; }
+@keyframes spin { from { transform: translate(-50%, 54px) rotate(0); } to { transform: translate(-50%, 54px) rotate(360deg); } }
+
+/* ---------- En-tête : bouton profil ---------- */
+.top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.profile-btn { flex: none; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--paper); display: grid; place-items: center; cursor: pointer; margin-top: 4px; }
+.profile-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
+.profile-btn:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+#wishArt svg { width: 132px; height: auto; display: block; margin-bottom: 6px; }
+
+/* ---------- Profil ---------- */
+body.locked { overflow: hidden; }
+.profile { position: fixed; inset: 0; z-index: 30; background: rgba(0, 0, 0, .55); display: flex; align-items: flex-end; justify-content: center; }
+.profile .page { width: 100%; max-width: 520px; height: 94%; overflow-y: auto; background: var(--ink); border-top: 1px solid var(--line); border-radius: 22px 22px 0 0;
+  padding-top: 12px; padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(22px, env(safe-area-inset-left, 0px)); padding-right: max(22px, env(safe-area-inset-right, 0px)); }
+.p-top { display: flex; justify-content: space-between; align-items: center; }
+.p-top .undo { margin: 0; }
+.eyebrow { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--red); font-weight: 500; }
+.p-name { width: 100%; margin: 14px 0 8px; padding: 6px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--paper);
+  font-family: var(--f-title); font-weight: 700; font-size: 34px; line-height: 1.1; }
+.p-name::placeholder { color: var(--muted); }
+.field { margin-top: 22px; display: flex; flex-direction: column; gap: 8px; }
+.field label, .field .label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.field input:not([type=file]), .key-row input { width: 100%; font: inherit; font-size: 15px; color: var(--paper); background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.field input:focus, .p-name:focus { outline: 2px solid var(--red); outline-offset: 1px; }
+.key-row { display: flex; gap: 8px; }
+.key-row input { flex: 1; min-width: 0; }
+.btn.small { flex: none; padding: 10px 14px; font-size: 12px; }
+.btn.ghost { display: block; text-align: center; font-size: 12px; padding: 12px; }
+.file-btn { cursor: pointer; }
+.tag.key { display: inline-flex; align-items: center; gap: 4px; }
+.tag.key button { background: none; border: 0; color: var(--muted); font-size: 16px; line-height: 1; cursor: pointer; padding: 0 2px; }
+.tag.match { border-color: var(--red); color: var(--paper); }
+.file { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; min-width: 0; }
+.file span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.file .undo { margin: 0; }
+.hint { color: var(--muted); font-size: 13px; margin: 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* ---------- Postuler en 3 étapes ---------- */
+.flow { margin-top: 22px; display: flex; flex-direction: column; gap: 10px; }
+.flow .step { display: grid; grid-template-columns: 30px 1fr; gap: 12px; background: var(--card); border-radius: 14px; padding: 14px; }
+.flow .num { width: 26px; height: 26px; border-radius: 50%; background: var(--red); color: var(--paper); display: grid; place-items: center; font-family: var(--f-title); font-size: 14px; }
+.flow h4 { margin: 2px 0 8px; font-family: var(--f-title); font-weight: 400; font-size: 16px; }
+.flow .step > div { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.pick { display: flex; align-items: center; gap: 10px; font-size: 14px; min-width: 0; }
+.pick span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pick input { accent-color: var(--red); width: 18px; height: 18px; flex: none; }
+.inline { background: none; border: 0; padding: 0; color: var(--paper); font: inherit; text-decoration: underline; cursor: pointer; }
+.btn.sent { margin-top: 6px; }
+.undo.left { margin: 0; text-align: left; }
+.sel { user-select: all; -webkit-user-select: all; color: var(--paper); font-weight: 500; }
+
+@media (prefers-reduced-motion: reduce) {
+  .daruma .look, .daruma .blink { animation: none; }
+}
